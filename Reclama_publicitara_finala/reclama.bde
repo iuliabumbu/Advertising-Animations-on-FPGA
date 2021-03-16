@@ -1,0 +1,547 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 42
+ VARIABLES
+ {
+  #ARCHITECTURE="arh_comp"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"a\"><left=\"2\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"af\"><left=\"6\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"an\"><left=\"3\"><direction=\"downto\"><right=\"0\"><initial_value=\"8D55E261BE2C4DE1AAE760A56C548BFF11108D55E261BE2C4DE1AAE760A56C548BFF\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"count\"><left=\"26\"><direction=\"downto\"><right=\"0\"><initial_value=\"(others => '0')\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"count_a\"><left=\"16\"><direction=\"downto\"><right=\"0\"><initial_value=\"(others => '0')\"><delay=\"\">>"
+  #ENTITY="reclama"
+  #LANGUAGE="VHDL"
+  #RANGE_RESOLUTION0="<range<index=\"0\"><name=\"count\"><left=\"26\"><direction=\"downto\"><right=\"0\"><initial_value=\"(others => '0')\"><delay=\"\">>"
+  #RANGE_RESOLUTION1="<range<index=\"0\"><name=\"count_a\"><left=\"16\"><direction=\"downto\"><right=\"0\"><initial_value=\"(others => '0')\"><delay=\"\">>"
+  AUTHOR="Iulia"
+  COMPANY="UTCN"
+  CREATIONDATE="5/8/2019"
+  SOURCE=".\\..\\src\\reclama_publicitara.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.std_logic_arith.all;\n"+
+"use ieee.STD_LOGIC_UNSIGNED.all;"
+   RECT (220,260,620,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"constant l : alfabet := (0 => \"1111111\", 1 => \"0001000\", 2 => \"1100000\", 3 => \"0110001\", 4 => \"1000010\", 5 => \"0110000\", 6 => \"0111000\", 7 => \"0100000\", 8 => \"1101000\", 9 => \"1111001\", 10 => \"1000111\", 11 => \"1110001\", 12 => \"1110001\", 13 => \"0101010\", 14 => \"1101010\", 15 => \"0000001\", 16 => \"0011000\", 17 => \"1111010\", 18 => \"0100100\", 19 => \"0111001\", 20 => \"1000001\", 21 => \"1100011\", 22 => \"1000000\", 23 => \"1001000\", 24 => \"1001100\", 25 => \"0010010\");\n"+
+"constant c1 : anim1 := (0 => l(18), 1 => l(3), 2 => l(15), 3 => l(16), 4 => l(0), 5 => l(0), 6 => l(0), 7 => l(0));\n"+
+"constant c2 : anim2 := (0 => l(18), 1 => l(0), 2 => l(0), 3 => l(0), 4 => l(0), 5 => l(3), 6 => l(0), 7 => l(0), 8 => l(0), 9 => l(0), 10 => l(15), 11 => l(0), 12 => l(0), 13 => l(0), 14 => l(0), 15 => l(16));\n"+
+"constant c3 : anim3 := (0 => l(18), 1 => l(3), 2 => l(15), 3 => l(16), 4 => l(3), 5 => l(15), 6 => l(16), 7 => l(18), 8 => l(15), 9 => l(16), 10 => l(18), 11 => l(3), 12 => l(16), 13 => l(18), 14 => l(3), 15 => l(15));\n"+
+"constant c4 : anim4 := (0 => l(18), 1 => l(0), 2 => l(0), 3 => l(0), 4 => l(18), 5 => l(3), 6 => l(0), 7 => l(0), 8 => l(18), 9 => l(3), 10 => l(15), 11 => l(0), 12 => l(18), 13 => l(3), 14 => l(15), 15 => l(16));\n"+
+"constant c5 : anim5 := (0 => l(18), 1 => l(3), 2 => l(15), 3 => l(16), 4 => l(18), 5 => l(0), 6 => l(0), 7 => l(0), 8 => l(18), 9 => l(3), 10 => l(15), 11 => l(16), 12 => l(0), 13 => l(3), 14 => l(0), 15 => l(0), 16 => l(18), 17 => l(3), 18 => l(15), 19 => l(16), 20 => l(0), 21 => l(0), 22 => l(15), 23 => l(0), 24 => l(18), 25 => l(3), 26 => l(15), 27 => l(16), 28 => l(0), 29 => l(0), 30 => l(0), 31 => l(16));\n"+
+"constant c6 : anim6 := (0 => l(18), 1 => l(3), 2 => l(15), 3 => l(16), 4 => l(0), 5 => l(0), 6 => l(0), 7 => l(0), 8 => l(0), 9 => l(0), 10 => l(0), 11 => l(0), 12 => l(0), 13 => l(0), 14 => l(0), 15 => l(0), 16 => l(18), 17 => l(3), 18 => l(15), 19 => l(16), 20 => l(0), 21 => l(0), 22 => l(0), 23 => l(0), 24 => l(0), 25 => l(0), 26 => l(0), 27 => l(0), 28 => l(18), 29 => l(3), 30 => l(15), 31 => l(16), 32 => l(0), 33 => l(0), 34 => l(0), 35 => l(0));\n"+
+"--Added by Active-HDL. Do not change code inside this section.\n"+
+"type alfabet is array (25 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim1 is array (7 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim2 is array (15 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim3 is array (15 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim4 is array (15 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim5 is array (31 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"type anim6 is array (35 downto 0) of STD_LOGIC_VECTOR(6 downto 0);\n"+
+"--End of extra code."
+   RECT (220,505,620,905)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "animatii"
+   TEXT 
+"animatii : process (clk)\n"+
+"                         variable i : natural := 0;\n"+
+"                       begin\n"+
+"                         if clk'event and clk = '1' then\n"+
+"                            case a is \n"+
+"                              when \"001\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c1(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c1(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c1(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c1(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 8 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when \"010\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c2(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c2(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c2(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c2(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 16 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when \"011\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c3(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c3(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c3(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c3(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 16 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when \"100\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c4(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c4(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c4(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c4(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 16 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when \"101\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c5(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c5(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c5(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c5(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 32 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when \"110\" => \n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    if (an(0) = '0') then\n"+
+"                                       an(0) <= '1';\n"+
+"                                       af <= c6(i);\n"+
+"                                       an(3) <= '0';\n"+
+"                                    elsif (an(3) = '0') then\n"+
+"                                       an(3) <= '1';\n"+
+"                                       af <= c6(i + 1);\n"+
+"                                       an(2) <= '0';\n"+
+"                                    elsif (an(2) = '0') then\n"+
+"                                       an(2) <= '1';\n"+
+"                                       af <= c6(i + 2);\n"+
+"                                       an(1) <= '0';\n"+
+"                                    elsif (an(1) = '0') then\n"+
+"                                       an(1) <= '1';\n"+
+"                                       af <= c6(i + 3);\n"+
+"                                       an(0) <= '0';\n"+
+"                                    end if;\n"+
+"                                 end if;\n"+
+"                                 if (count_a = \"10000000000000000\") then\n"+
+"                                    count_a <= (others => '0');\n"+
+"                                 end if;\n"+
+"                                 count_a <= count_a + 1;\n"+
+"                                 count <= count + 1;\n"+
+"                                 if i = 36 then\n"+
+"                                    i := 0;\n"+
+"                                 end if;\n"+
+"                                 if (count = \"100000000000000000000000000\") then\n"+
+"                                    i := i + 4;\n"+
+"                                    count <= (others => '0');\n"+
+"                                 end if;\n"+
+"                              when others => \n"+
+"                                 an <= \"0000\";\n"+
+"                                 af <= l(5);\n"+
+"                            end case;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (940,240,1341,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  18, 21, 24, 30, 33, 36 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  36 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="a(2:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (800,300)
+   VERTEXES ( (2,31) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="af(6:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1460,260)
+   VERTEXES ( (2,19) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusBidirectional"
+    #CUSTOM_NAME=""
+    #INITIAL_VALUE="\"1110\""
+    #LIBRARY="#terminals"
+    #REFERENCE="an(3:0)"
+    #SYMBOL="BusBidirectional"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1460,660)
+   VERTEXES ( (2,27) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,260)
+   VERTEXES ( (2,37) )
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,300,748,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1512,260,1512,260)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1522,660,1522,660)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,260,748,260)
+   ALIGN 6
+   PARENT 7
+  }
+  NET BUS  12, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="(others => '0')"
+    #NAME="count(26:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  13, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="(others => '0')"
+    #NAME="count_a(16:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="a(2:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="af(6:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  16, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="\"1110\""
+    #NAME="an(3:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  18, 0, 0
+  {
+   COORD (1341,260)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1460,260)
+  }
+  BUS  20, 0, 0
+  {
+   NET 15
+   VTX 18, 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1341,340)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1420,340)
+  }
+  BUS  23, 0, 0
+  {
+   NET 12
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1341,300)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1420,300)
+  }
+  BUS  26, 0, 0
+  {
+   NET 13
+   VTX 24, 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (1460,660)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (1440,660)
+  }
+  BUS  29, 0, 0
+  {
+   NET 16
+   VTX 27, 28
+  }
+  VTX  30, 0, 0
+  {
+   COORD (940,300)
+  }
+  VTX  31, 0, 0
+  {
+   COORD (800,300)
+  }
+  BUS  32, 0, 0
+  {
+   NET 14
+   VTX 30, 31
+  }
+  VTX  33, 0, 0
+  {
+   COORD (940,340)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (920,340)
+  }
+  BUS  35, 0, 0
+  {
+   NET 16
+   VTX 33, 34
+  }
+  VTX  36, 0, 0
+  {
+   COORD (940,260)
+  }
+  VTX  37, 0, 0
+  {
+   COORD (800,260)
+  }
+  WIRE  38, 0, 0
+  {
+   NET 17
+   VTX 36, 37
+  }
+  VTX  39, 0, 0
+  {
+   COORD (920,660)
+  }
+  BUS  40, 0, 0
+  {
+   NET 16
+   VTX 28, 39
+  }
+  BUS  41, 0, 0
+  {
+   NET 16
+   VTX 34, 39
+  }
+ }
+ 
+}
+

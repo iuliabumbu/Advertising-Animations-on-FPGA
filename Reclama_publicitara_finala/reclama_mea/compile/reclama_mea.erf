@@ -1,0 +1,22 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea\src\reclama_publicitara.vhd" 
+BEGINPROGRESS C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea\src\reclama_publicitara.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "reclama"" 
+UPDATEPROGRESS 2
+MESSAGE "Compile Architecture "arh_comp" of Entity "reclama"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 4
+UPDATEPROGRESS 5
+UPDATEPROGRESS 9
+UPDATEPROGRESS 11
+UPDATEPROGRESS 15
+UPDATEPROGRESS 22
+UPDATEPROGRESS 25
+UPDATEPROGRESS 32
+UPDATEPROGRESS 54
+UPDATEPROGRESS 57
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea\src\reclama_publicitara.vhd
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

@@ -1,0 +1,24 @@
+timestamp=1558611012808
+
+[~A]
+ModifyID=6
+Version=74
+
+[reclama]
+A/arh_comp=21|./../src/reclama_publicitara.vhd|15|1*32242
+BinI32/arh_comp=3*0
+I=0*30762
+I/arh_comp=0*39181
+M=11|0|vde|1558611012543|./../src/reclama_publicitara.vhd|0*30291*0x6a605dba4c56a5ef7e78578900569e0eb5d97e7e|0*30669*0x23b75c12e3e89f2ef000564498faa8c2
+M/arh_comp=21|0|vde|1558611012583|./../src/reclama_publicitara.vhd|0*31042*0x07476b65373290256173c7b7b67affa8fa62654b|0*39076*0x20116f55b147878295aeff36dce7fc50
+R=./../src/reclama_publicitara.vhd|8
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|afce99c84d863c8786cfd3fab0b9e80f26527262ddaa47cb266f3a3c4d9b973acdef32ba7a192f1cc05232ae6e34bc8f
+Version/arh_comp=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|30118c52c4dd7430367bd4fb4b05c47eeaf190bca5f7b29ee504cb730d4c63eb045403dd1e50266a8033c2329a55febe
+
+[~MFT]
+0=15|0reclama_mea.mgf|39181|30055
+1=2|1reclama_mea.mgf|32242|32242
+3=1|3reclama_mea.mgf|0|0
+
+[~U]
+reclama=11|0*30055|

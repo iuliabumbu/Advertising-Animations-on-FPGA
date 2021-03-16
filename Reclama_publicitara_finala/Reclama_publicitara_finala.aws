@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+reclama_mea=.\reclama_mea\reclama_mea.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+reclama_mea=1

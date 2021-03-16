@@ -1,0 +1,43 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work reclama_mea -2002  $dsn/src/reclama_publicitara.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea\src\reclama_publicitara.vhd
+# Compile Entity "reclama"
+# Compile Architecture "arh_comp" of Entity "reclama"
+# Error: COMP96_0393: reclama_publicitara.vhd : (371, 9): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (375, 13): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (379, 13): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (383, 13): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (406, 7): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (410, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (414, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (418, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (441, 6): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (445, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (449, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (453, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (476, 6): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (480, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (484, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (488, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (511, 6): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (515, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (519, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (523, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (546, 7): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (550, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (554, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (558, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (581, 7): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (585, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (589, 11): Cannot read output : "an".
+# Error: COMP96_0393: reclama_publicitara.vhd : (593, 11): Cannot read output : "an".
+# Compile failure 28 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ULM: Warning: ULM_0021 Architecture `arh_comp' of entity `reclama_mea.reclama' is not up-to-date. Please recompile file `C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea/src/reclama_publicitara.vhd'.
+acom -O3 -e 100 -work reclama_mea -2002  $dsn/src/reclama_publicitara.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Asus\Desktop\PSN\Reclama_publicitara_finala\reclama_mea\src\reclama_publicitara.vhd
+# Compile Entity "reclama"
+# Compile Architecture "arh_comp" of Entity "reclama"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
